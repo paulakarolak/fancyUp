@@ -17,7 +17,6 @@ class ItemProvider extends Component {
         maxPrice: 0,
         minSize: 0,
         maxSize: 0,
-        pets: false
     }
     //getData
     componentDidMount() {
