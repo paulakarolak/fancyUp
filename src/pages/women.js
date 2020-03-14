@@ -9,8 +9,8 @@ const Women = () => {
         <>
             <Hero hero="womenHero">
                 <Banner title="Collection for women">
-                    <Link to="/">
-                        <button className="buttons return">Back home</button>
+                    <Link to="/wardrobe">
+                        <button className="back-wardrobe">Back to wardrobe</button>
                     </Link>
                 </Banner>
             </Hero>

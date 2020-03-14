@@ -8,11 +8,14 @@ const Men = () => {
         <>
             <Hero hero="menHero">
                 <Banner title="Collection for men">
-                <Link to="/">
-                        <button className="buttons return">Back home</button>
+                <Link to="/wardrobe">
+                        <button className="back-wardrobe">Back to wardrobe</button>
                     </Link>
                 </Banner>
             </Hero>
+            <div className="error-men">
+                <h3>Sorry, currently no items available.</h3>
+            </div>
         </>
     )
 }

@@ -8,6 +8,7 @@ class ItemProvider extends Component {
         clothes: [],
         sortedItems: [],
         clothing: [],
+        clothing_men:[],
         loading: true,
         type: 'all',
         print: 'all',
@@ -22,10 +23,12 @@ class ItemProvider extends Component {
         //this.getData
         let clothes = this.formatData(items);
         let clothing = clothes.filter(cloth => cloth.new === true);
-        let  maxPrice = Math.max(...clothes.map(item => item.price));
+        let clothing_men = clothes.filter(cloth => cloth.men === true)
+        let maxPrice = Math.max(...clothes.map(item => item.price));
         this.setState({
             clothes,
             clothing,
+            clothing_men,
             sortedItems: clothes,
             loading: false,
             price: maxPrice,

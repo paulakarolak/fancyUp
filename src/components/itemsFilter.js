@@ -44,7 +44,7 @@ export default function ItemsFilter({clothes}) {
     });
 
     return (
-        <section className="fiter-container">
+        <section className="filter-container">
             <Title title="browse wardrobe" />
             <form className="filter-form">
                 <div className="form-group">
@@ -81,7 +81,7 @@ export default function ItemsFilter({clothes}) {
                     </select>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="prints">Print</label>
+                    <label htmlFor="prints">Print/Material</label>
                     <select 
                     name="print" 
                     id="print" 

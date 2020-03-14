@@ -50,13 +50,13 @@ export default class Cloth extends Component {
                     <div className="single-item-info">
                         <article className="desc">
                             <h3>Details</h3>
-                            <p>print: {print}</p>
-                            <p>color: {color}</p>
+                            <h6>print: {print}</h6>
+                            <h6>color: {color}</h6>
                         </article>
-                        <article className="info">
+                        <article className="infos">
                             <h3>info</h3>
                             <h6>price : ${price}</h6>
-                            <h6>size : ${size}</h6>
+                            <h6>size : {size}</h6>
                         </article>
                     </div>
                 </section>

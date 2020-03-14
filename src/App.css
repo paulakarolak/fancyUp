@@ -13,8 +13,8 @@
   --colorButton: #8F2D56;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.1);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -35,6 +35,11 @@ a {
 .error {
   text-align: center;
   text-transform: uppercase;
+  margin: 2rem 0;
+}
+.error-men {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
   margin: 2rem 0;
 }
 .empty-search {
@@ -786,7 +791,6 @@ a {
   transform: translate(-50%, -50%) scale(1);
 }
 .item-info {
-  background: var(--darkGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
@@ -797,13 +801,13 @@ a {
 
 /* single item*/
 .single-item {
-  padding: 5rem 0 0 0;
+  padding: 15rem 0 0 0;
 }
 .single-item-images {
   width: 80vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
 }
@@ -811,20 +815,38 @@ a {
   width: 100%;
   display: block;
 }
+.single-item-images img:hover {
+  transform: scale(2)
+}
 .single-item-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
-  margin: 2rem auto;
+  margin: 15rem auto 5rem auto;
 }
-.info h3,
-.info h6 {
+.desc h3, .infos h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+.infos h6,
+.desc h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+}
+.infos h3,
+.infos h6,
+.desc h6 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
-
-.info h6 {
-  font-weight: 300;
+.desc h3,
+.desc h6,
+.desc p {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
 }
 @media screen and (min-width: 992px) {
   .single-item-images,
@@ -837,7 +859,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
   }
-  .info {
+  .infos {
     padding-left: 3rem;
   }
 } 
