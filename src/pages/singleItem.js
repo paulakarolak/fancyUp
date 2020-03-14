@@ -23,7 +23,7 @@ export default class Cloth extends Component {
         if (!cloth) {
             return <div className="error">
                 <h3>No item found.</h3>
-                <Link to='/wardrobe' className="return">Back to wardrobe</Link>
+                <Link to='/wardrobe' className="back-wardrobe">Back to wardrobe</Link>
             </div>
         }
         const { name,
@@ -33,12 +33,12 @@ export default class Cloth extends Component {
             color,
             images
         } = cloth
-        const [mainImg, ...defaultImg] = images
         return (
             <>
-                <StyledHero img={mainImg}>
-                    <Banner title={`${name} cloth`}>
-                        <Link to='/wardrobe' className="return">Back to wardrobe</Link>
+                <StyledHero>
+                    <Banner title={name}>
+                        <Link to='/wardrobe'>
+                        <button className="back-wardrobe">Back to wardrobe</button></Link>
                     </Banner>
                 </StyledHero>
                 <section className="single-item">

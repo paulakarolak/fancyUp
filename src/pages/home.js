@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import wedding from '../images/wedding-arch.png';
-import redcarpet from '../images/red-carpet.png';
-import champagneglass from '../images/champagne-glass.png';
-import calendar from '../images/calendar.png';
-import hanger from '../images/hanger.png';
-import location from '../images/location.png';
-import shipment from '../images/package.png';
-import insurance from '../images/insurance.png';
-import cleaning from '../images/drycleaning.png';
-import delivery from '../images/shipped.png';
+import wedding from '../images/wedding.svg';
+import gala from '../images/gala.svg';
+import champagneglass from '../images/glass.svg';
+import event from '../images/event.svg';
+import hanger from '../images/hanger.svg';
+import wardrobe from '../images/wardrobe.svg';
+import shop from '../images/shop.svg';
+import insurance from '../images/insurance.svg';
+import cleaning from '../images/dry.svg';
+import choice from '../images/choice.svg';
 
 export default function Home() {
     return (
@@ -44,7 +44,7 @@ export default function Home() {
                             <li>
                                 <div className="occasion-div">
                                     <h3>Gala</h3>
-                                    <img src={redcarpet} height="60" alt="red-carpet" />
+                                    <img src={gala} height="60" alt="red-carpet" />
                                 </div>
                             </li>
                             <li>
@@ -56,7 +56,7 @@ export default function Home() {
                             <li>
                                 <div className="occasion-div">
                                     <h3>Work event</h3>
-                                    <img src={calendar} height="60" alt="calendar-event" />
+                                    <img src={event} height="60" alt="calendar-event" />
                                 </div>
                             </li>
                         </ul>
@@ -84,21 +84,19 @@ export default function Home() {
                     <h2>HOW IT WORKS</h2>
                     <div className="info-div-container">
                         <div className="info-div">
+                            <img src={wardrobe} alt="" />
+                            <h3>Browse our wardrobe</h3>
+                            <p>Check out our wardrobe for ladies and gentlemen.</p>
+                        </div>
+                        <div className="info-div">
                             <img src={hanger} alt="" />
-                            <h3>Choose your item</h3>
+                            <h3>Check availability</h3>
                             <p>Use filters to find available items which you like.</p>
                         </div>
                         <div className="info-div">
-                            <img src={location} alt="" />
-                            <h3>Provide address</h3>
-                            <p>Give us your address where we can ship your order.</p>
-                        </div>
-                        <div className="info-div">
-                            <img src={shipment} alt="" />
-                            <h3>Unlock shipment</h3>
-                            <p>Pay for rental - if you do not like the item and want to return it, you will get your money
-                            back!
-                    </p>
+                            <img src={shop} alt="" />
+                            <h3>Visit our store</h3>
+                            <p>Come to our store to rent your selected item!</p>
                         </div>
                     </div>
                 </div>
@@ -109,7 +107,7 @@ export default function Home() {
                 </div>
                 <div className="buttons">
                     <Link to="/wardrobe/">
-                        <button className="join-now">JOIN NOW</button>
+                        <button className="join-now">BROWSE NOW</button>
                     </Link>
                 </div>
             </div>
@@ -125,8 +123,8 @@ export default function Home() {
                             <p>Dry cleaning</p>
                         </div>
                         <div className="info-div">
-                            <img src={delivery} alt="" />
-                            <p>Shipping both ways</p>
+                            <img src={choice} alt="" />
+                            <p>Diverse selection</p>
                         </div>
                     </div>
                 </div>

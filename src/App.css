@@ -142,6 +142,25 @@ a {
   text-align: center;
   font-family: 'Dancing Script', cursive;
 }
+@media (max-width: 1040px) {
+  .img-1 h1 {
+    font-size: 70px;
+  }
+  .h2-background h2 {
+    font-size: 40px!important;
+  }
+}
+@media (max-width: 915px) {
+  .img-1 h1 {
+    font-size: 70px;
+  }
+  .h2-background h2 {
+    font-size: 40px!important;
+  }
+  .dress-up, .suit-up {
+    margin-top: 30px!important;
+  }
+}
 .h2-background {
   margin-top: 50px;
   background-color: var(--colorWomen); 
@@ -153,6 +172,7 @@ a {
   font-size: 50px;
   padding: 10px 40px;
   font-family: 'Lora', serif;
+  text-align: center;
 }
 .buttons {
   display: flex;
@@ -228,6 +248,23 @@ a {
   opacity: 0.7;
   margin-bottom: 10px;
 }
+.back-wardrobe {
+  font-family: 'Lora', serif;
+  background-color: var(--colorButton);
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 32px;
+  height: 70px;
+  width: 350px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.back-wardrobe:hover {
+  opacity: 0.9;
+}
 .return:hover {
   opacity: 0.9;
 }
@@ -239,6 +276,9 @@ a {
   border: none;
   font-weight: bold;
   font-size: 32px;
+}
+.join-now:hover {
+  opacity: 0.7;
 }
 .buttons button {
   background-position: center;
@@ -295,7 +335,6 @@ a {
   text-align: center;
   font-family: 'Lora', serif;
 }
-
 .img-3 {
   height: 650px;
   background-image: url("./images/woman-shopping.jpg");
@@ -344,9 +383,10 @@ a {
   list-style: none;
 }
 .occasion-list >ul li {
-  padding: 50px;
+  width: 300px;
   font-family: 'Lora', serif;
   font-size: 32px;
+  padding: 20px 0;
 }
 .occasion-div {
   display: flex;
@@ -480,6 +520,25 @@ a {
   font-weight: normal;
   font-size: 16px;
 }
+@media (max-width: 730px) {
+.page-footer .footer-info-div, .footer-contact-div {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 420px) {
+  .page-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footer-contact-div {
+      margin-top: 50px;
+    }
+    .page-footer .footer-info-div, .footer-contact-div {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 /*modals*/
 .modal {
   max-width: 1000px;
@@ -693,13 +752,13 @@ a {
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   text-align: center;
   transition: var(--mainTransition);
 }
 .price-top h6 {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
 }
@@ -707,8 +766,12 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: scale(0);
   transition: all 0.3s linear;
+  color: white;
+  background-color: var(--colorButton);
+  font-size: 20px;
+  letter-spacing: var(--mainSpacing);
+  padding: 10px;
 }
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
@@ -729,6 +792,7 @@ a {
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+  font-size: 1.2rem;
 } 
 
 /* single item*/
@@ -752,17 +816,6 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem auto;
-}
-.desc,
-.info {
-  margin: 1rem 0;
-}
-.desc h3 {
-  text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-}
-.desc p {
-  line-height: 1.5;
 }
 .info h3,
 .info h6 {

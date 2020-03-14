@@ -14,7 +14,7 @@ export default function Item({ cloth }) {
                     <h6>${price}</h6>
                     <p>per day</p>
                 </div>
-                <Link to={`/wardrobe/${phrase}`} className="return item-link">See more</Link>
+                <Link to={`/wardrobe/${phrase}`} className="item-link">See more</Link>
             </div>
             <p className="item-info">{name}</p>
         </article>

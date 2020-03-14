@@ -31,7 +31,6 @@ class ItemProvider extends Component {
             price: maxPrice,
             maxPrice,
         })
-
     }
     formatData(items) {
         let tempItems = items.map(item => {
