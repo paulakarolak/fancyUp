@@ -12,11 +12,10 @@ class ItemProvider extends Component {
         type: 'all',
         print: 'all',
         color: 'all',
+        size: 'all',
         price: 0,
         minPrice: 0,
         maxPrice: 0,
-        minSize: 0,
-        maxSize: 0,
     }
     //getData
     componentDidMount() {
@@ -24,7 +23,6 @@ class ItemProvider extends Component {
         let clothes = this.formatData(items);
         let clothing = clothes.filter(cloth => cloth.new === true);
         let  maxPrice = Math.max(...clothes.map(item => item.price));
-        let  maxSize = Math.max(...clothes.map(item => item.size));
         this.setState({
             clothes,
             clothing,
@@ -32,7 +30,6 @@ class ItemProvider extends Component {
             loading: false,
             price: maxPrice,
             maxPrice,
-            maxSize
         })
 
     }
@@ -65,14 +62,29 @@ class ItemProvider extends Component {
             print,
             color,
             price,
-            minSize,
-            maxSize
+            size,
         } = this.state
 
         let tempClothes = [...clothes];
+        //filter by type
         if(type!=='all'){
             tempClothes = tempClothes.filter(cloth => cloth.type === type)
         }
+        //filter by size
+        if(size!=='all'){
+            tempClothes = tempClothes.filter(cloth => cloth.size === size)
+        }
+        //filter by color
+        if(color!=='all'){
+            tempClothes = tempClothes.filter(cloth => cloth.color === color)
+        }
+        //filter by print
+        if(print!=='all'){
+            tempClothes = tempClothes.filter(cloth => cloth.print === print)
+        }
+        //filter by price
+        tempClothes = tempClothes.filter(cloth => cloth.price <= price);
+        //change state
         this.setState({
             sortedItems: tempClothes
         })
