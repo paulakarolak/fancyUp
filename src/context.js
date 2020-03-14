@@ -29,7 +29,7 @@ class ItemProvider extends Component {
             clothes,
             clothing,
             sortedItems: clothes,
-            loading: false,
+            // loading: false,
             price: maxPrice,
             maxPrice,
             maxSize
