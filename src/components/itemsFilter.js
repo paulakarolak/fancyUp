@@ -2,7 +2,11 @@ import React, {useContext} from 'react';
 import {ItemContext} from '../context';
 import Title from '../components/title';
 
-export default function ItemsFilter() {
+//get all unique values
+const getUnique = (items, value) => {
+    return [...new Set(items.map(item => item[value]))]
+}
+export default function ItemsFilter({clothes}) {
     const context = useContext(ItemContext);
     const {
         handleChange,
@@ -15,6 +19,11 @@ export default function ItemsFilter() {
         minSize,
         maxSize,
     } = context
+    let types = getUnique(clothes,'type');
+    types = ['all', ...types];
+    types = types.map((item, index) => {
+        return <option value={item} key={index}>{item}</option>
+    })
     return (
         <section className="fiter-container">
             <Title title="browse wardrobe" />
@@ -27,10 +36,9 @@ export default function ItemsFilter() {
                     value={type} 
                     className="form-control" 
                     onChange={handleChange}>
-                        <option value="single">dress</option>
+                        {types}
                     </select>
                 </div>
-
             </form>
         </section>
     )

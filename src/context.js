@@ -29,7 +29,7 @@ class ItemProvider extends Component {
             clothes,
             clothing,
             sortedItems: clothes,
-            // loading: false,
+            loading: false,
             price: maxPrice,
             maxPrice,
             maxSize
@@ -51,12 +51,31 @@ class ItemProvider extends Component {
         return cloth;
     }
     handleChange = event => {
-        const type = event.target.type
-        const name = event.target.name
-        const value = event.target.value
+        const target = event.target;
+        const value = event.type === 'checkbox' ? target.checked : target.value;
+        const name = event.target.name;
+        this.setState({
+            [name]:value
+        }, this.filterItems)
     }
     filterItems = () => {
+        let {
+            clothes,
+            type,
+            print,
+            color,
+            price,
+            minSize,
+            maxSize
+        } = this.state
 
+        let tempClothes = [...clothes];
+        if(type!=='all'){
+            tempClothes = tempClothes.filter(cloth => cloth.type === type)
+        }
+        this.setState({
+            sortedItems: tempClothes
+        })
     }
     render() {
         return (

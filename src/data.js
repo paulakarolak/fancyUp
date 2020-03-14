@@ -1,3 +1,30 @@
+import dress1 from './images/women/rental/dresses/woman-1/SLR24.jpg';
+import dress1_1 from './images/women/rental/dresses/woman-1/SLR24-1.jpg';
+import dress1_2 from './images/women/rental/dresses/woman-1/SLR24-2.jpg';
+import dress1_3 from './images/women/rental/dresses/woman-1/SLR24-3.jpg';
+import dress2 from './images/women/rental/dresses/woman-2/FEA7.jpg';
+import dress2_1 from './images/women/rental/dresses/woman-2/FEA7-1.jpg';
+import dress2_2 from './images/women/rental/dresses/woman-2/FEA7-2.jpg';
+import dress2_3 from './images/women/rental/dresses/woman-2/FEA7-3.jpg';
+import dress3 from './images/women/rental/dresses/woman-3/RMB74.jpg';
+import dress3_1 from './images/women/rental/dresses/woman-3/RMB74-1.jpg';
+import dress3_2 from './images/women/rental/dresses/woman-3/RMB74-2.jpg';
+import dress4 from './images/women/rental/dresses/woman-4/DTP67.jpg';
+import dress4_1 from './images/women/rental/dresses/woman-4/DTP67-1.jpg';
+import dress4_2 from './images/women/rental/dresses/woman-4/DTP67-2.jpg';
+import dress4_3 from './images/women/rental/dresses/woman-4/DTP67-3.jpg';
+import dress5 from './images/women/rental/dresses/woman-5/CD53.jpg';
+import dress5_1 from './images/women/rental/dresses/woman-5/CD53-1.jpg';
+import dress5_2 from './images/women/rental/dresses/woman-5/CD53-2.jpg';
+import dress5_3 from './images/women/rental/dresses/woman-5/CD53-3.jpg';
+import dress6 from './images/women/rental/dresses/woman-6/PK419.jpg';
+import dress6_1 from './images/women/rental/dresses/woman-6/PK419-1.jpg';
+import dress6_2 from './images/women/rental/dresses/woman-6/PK419-2.jpg';
+import dress6_3 from './images/women/rental/dresses/woman-6/PK419-3.jpg';
+
+
+
+
 export default [
     {
         sys: {
@@ -5,38 +32,39 @@ export default [
           },
         fields: {
         name: 'Fancy Lace',
-        type: 'dress',
+        type: 'jacket',
         color: 'black',
         print: 'lace',
         price: 15,
         phrase: 'fancy-lace',
         size: 'M',
+        new: true,
         images: [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-1/SLR24.jpg",
+                  url: dress1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-1/SLR24-1.jpg",
+                  url: dress1_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-1/SLR24-2.jpg",
+                  url: dress1_2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-1/SLR24-3.jpg",
+                  url: dress1_3
                 }
               }
             }
@@ -60,28 +88,28 @@ export default [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-2/FEA7.jpg",
+                  url: dress2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-2/FEA7-1.jpg",
+                  url: dress2_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-2/FEA7-2.jpg",
+                  url: dress2_2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-2/FEA7-3.jpg",
+                  url: dress2_3
                 }
               }
             }
@@ -100,36 +128,29 @@ export default [
         price: 10,
         phrase: 'velvet-party',
         size: 'M',
-        new: true,
+        new: false,
         images: [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-3/RMB74.jpg",
+                  url: dress3
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-3/RMB74-1.jpg",
+                  url: dress3_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-3/RMB74-2.jpg",
+                  url: dress3_2
                 }
               }
             },
-            {
-              fields: {
-                file: {
-                  url: "./images/women/rental/dresses/woman-3/RMB74-3.jpg",
-                }
-              }
-            }
           ]
         }
     },
@@ -150,28 +171,28 @@ export default [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-4/DTP67.jpg",
+                  url: dress4
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-4/DTP67-1.jpg",
+                  url: dress4_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-4/DTP67-2.jpg",
+                  url: dress4_2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-4/DTP67-3.jpg",
+                  url: dress4_3
                 }
               }
             }
@@ -195,28 +216,28 @@ export default [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-5/CD53.jpg",
+                  url: dress5
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-5/CD53-1.jpg",
+                  url: dress5_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-5/CD53-2.jpg",
+                  url: dress5_2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-5/CD53-3.jpg",
+                  url: dress5_3
                 }
               }
             }
@@ -241,28 +262,28 @@ export default [
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-6/PK419.jpg",
+                  url: dress6
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-6/PK419-1.jpg",
+                  url: dress6_1
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-6/PK419-2.jpg",
+                  url: dress6_2
                 }
               }
             },
             {
               fields: {
                 file: {
-                  url: "./images/women/rental/dresses/woman-6/PK419-3.jpg",
+                  url: dress6_3
                 }
               }
             }
