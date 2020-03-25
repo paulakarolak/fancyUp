@@ -1,2 +1,2 @@
 # fancyUp
-clothing rental app
+clothing rental app - still in development
